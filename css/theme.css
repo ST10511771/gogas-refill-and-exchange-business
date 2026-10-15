@@ -1,0 +1,51 @@
+.nav {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: rgb(8, 2, 58);
+    color: beige;
+    padding: 20px;
+    text-decoration: none;
+}
+
+.nav:hover{
+    background-color: rgb(245, 220, 234);
+
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    padding: 15 px;
+}
+
+.nav {
+    text-decoration: none
+    color(srgb red green blue);
+
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    margin: auto;
+}
+body{
+    margin: 0;
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    padding: 15px;
+    background-color: beige;
+
+}
+
+nav a {
+    text-decoration: none;
+    color: green;
+    font-weight: bold;
+}
