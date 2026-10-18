@@ -53,3 +53,7 @@ nav a {
    color: black;
    font-weight: bold;
 }
+nav a {
+    outline: none;
+    -webkit-tap-highlight-color: transparent;
+}
