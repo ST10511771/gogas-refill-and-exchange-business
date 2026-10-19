@@ -7,7 +7,7 @@
 }
 
 .nav:hover{
-    background-color: transparent(245, 220, 234);
+    background-color: transparent (245, 220, 234);
 
 }
 
@@ -35,19 +35,23 @@ body{
     margin: 0;
 }
 
-nav{
+nav a {
     display: flex;
+    flex-direction: row;
     justify-content: center;
-    gap: 25px;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0;
     padding: 15px;
     background-color: beige;
-
 }
-
+    
 nav a {
     text-decoration: none;
-    color: green;
+    color: black;
     font-weight: bold;
+    padding: 10px 20px;
+    border-right: 1px solid #cccccc;
 }
 #home-title {
    color: black;
