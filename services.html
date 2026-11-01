@@ -5,7 +5,9 @@
     </head>
     <link rel="stylesheet" href="css/theme.css">
     <body>
-        <h1>Our Services</h1>
+         <section class="service-section">
+            <h1>Our Services</h1>
+            <p>choose the gad service ypu need.GoGas make gas delivery simple and convient</p>
        <div class="nav">
         <a href="index.html">Home</a>
         <a href="services.html">Services</a>
@@ -13,17 +15,24 @@
         <a href="about us.html">About Us</a>
         <a href="contact us.html">Contact Us</a>
         </div> 
-        </p>
         <img src="images/istockphoto.jpg"wodth="40%">
+        <div class="service-container">
+        </div>
+        <div class="service-card">
         <h2>Gas Refilling</h2>
-        <p>Get your empty gas cyclinder refilled quickly and conveniently.</p>
+        <p>ReFill your gas cylinder fast and conveniently.</p>
+        <button onclick="showform('refill')">choose Refill</button>
+    </div>
+    <div class="service-card">
         <h2>Gas Exchange</h2>
         <p>Exchange your empty gas Cylinder for a full one.</p>
-        <h2>Gas Delivery</h2>
-        <p>Order your gas online and have it delivery directly to your doorstep</p>
-        <h2>Emergency Gas  Delivery</h2>
+        <button onclick="showform('exchange')">choose Exchange</button>
+    </div>
+    <div class="service-card"><h2>Emergency Gas Delivery</h2>
         <p>Running out of gas ? Request a fast gas delivery when you need it.</p>
-        <h2>Order Gas Now</h2>
-        <p>Contact GasGo today for your gas Refills , exchange or delivery.</p>
+        <button onclick="showform(emergency)">Request Emergency Delivery</button>
+    </div>
+    <div id="service-form"></div>
     </body>
+         </section>
 </html>

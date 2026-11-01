@@ -29,3 +29,36 @@ img {
 .nav a:last-child {
     border-right: none;
 }
+
+.services-section {
+    text-align: center;
+    padding: 30px;
+}
+.services-section h1 {
+    color: green;
+    font-weight: bold;
+}
+.service-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+.service-card {
+    background-color: #f5f0e5;
+    padding: 25px;
+    width: 250px;
+    border-radius: 10px;
+}
+.service-card button {
+    background-color: green;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.service-card button:hover {
+    background-color: darkgreen;
+}
