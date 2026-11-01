@@ -39,17 +39,19 @@ img {
     font-weight: bold;
 }
 .service-container {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
-    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(31fr);
+    gap: 25px;
+    width: 70%;
+    margin-top: 30px auto;
 }
 .service-card {
     background-color: #f5f0e5;
-    padding: 25px;
-    width: 250px;
+    padding: 15px;
     border-radius: 10px;
+    width: auto;
+    box-sizing: border-box;
+    min-height: 180px;
 }
 .service-card button {
     background-color: green;
