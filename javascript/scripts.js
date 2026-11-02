@@ -1,16 +1,15 @@
 function  showform(service) {
-    let formArea = document.getElementById("service-form");
-    let formTitle = "";}
+    let formArea = document.getElementById("service-form");}
+
     if (service === 'refill') {
-    formTitle = "Gas Refill Request";
+    formArea.innerHTML= <h2>"Gas Refill Request";</h2>
 }
 else if (service === "exchangee") {
-    formTitle = "Gas Exchange Request";
+    formArea.innerHTML= <h2>"Gas Exchange Request";</h2>
 }
 else if (service === "emergency") {
-    formTitle = "Emergency Gas Delivery Request";
+    formArea.innerHTML= <h2>"Emergency Gas Delivery Request";</h2>
 }
-formArea.innerHTML = <h2>$(formTitle)</h2>
 <form>
     <label>Full Name:</label>
     <input type="text"
@@ -23,3 +22,4 @@ formArea.innerHTML = <h2>$(formTitle)</h2>
             <button type="submit">Request</button>
             </form>';
             formArea.scrollIntoView({behavior: "smooth"});
+            

@@ -4,7 +4,9 @@
         <title>Services - GasGo</title>
     </head>
     <link rel="stylesheet" href="css/theme.css">
-    <script src="script.js"></script>
+
+    <script src="../javascript/scripts.js"></script>
+
     <body>
          <section class="service-section">
             <h1>Our Services</h1>
@@ -22,16 +24,17 @@
         <div class="service-card">
         <h2>Gas Refilling</h2>
         <p>ReFill your gas cylinder fast and conveniently.</p>
-        <button onclick="showform('refill')">choose Refill</button>
+        <button onclick="showform('refill')">Choose Refill</button>
     </div>
+    <div id="service-form"></div>
     <div class="service-card">
         <h2>Gas Exchange</h2>
         <p>Exchange your empty gas Cylinder for a full one.</p>
-        <button onclick="showform('exchange')">choose Exchange</button>
+        <button onclick="showform('exchange')">Choose Exchange</button>
     </div>
     <div class="service-card"><h2>Emergency Gas Delivery</h2>
         <p>Running out of gas ? Request a fast gas delivery when you need it.</p>
-        <button onclick="showform(emergency)">Request Emergency Delivery</button>
+        <button onclick="showform('emergency')">Request Emergency Delivery</button>
     </div>
     <div id="service-form"></div>
     </body>
