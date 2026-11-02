@@ -40,7 +40,7 @@ img {
 }
 .service-container {
     display: grid;
-    grid-template-columns: repeat(31fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 25px;
     width: 70%;
     margin-top: 30px auto;
@@ -63,4 +63,83 @@ img {
 }
 .service-card button:hover {
     background-color: darkgreen;
+}
+.how.section {
+    text-align: center;
+    padding: 50px 20px;
+}
+.how.section h1 {
+    color:#356b3f;
+    font-size: 32px;
+    font-weight: bold;
+}
+.how-intro {
+    font-size: 17px;
+    margin: 15px auto 35px;
+}
+.step-container{
+    display: grid;
+    grid-template-columns: repeat(41fr);
+    gap: 20px;
+    width: 90%;
+    margin: 0 auto;
+}
+.step-card h2 {
+    color: #356b3f;
+    font-size: 30px;
+}
+.step-card h3 {
+    color: #356b3f;
+    font-size: 19px;
+}
+.step-card {
+    color: #333;
+    line-height: 1.6;
+}
+@media (max-width: 768px) {
+    .step-container grid-template-columns:2, 1fr;
+}
+.delivery-area {
+    text-align: center;
+    padding: 40px 20px;
+}
+.delivery-area h2 {
+    color: #356b3f;
+    font-size: 28px;
+}
+.area-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    width: 85%;
+    margin: 30px auto;
+}
+.area-card {
+    background-color: #f5f0e5;
+    padding: 20px;
+    border-radius: 10px;
+    color: #356b3f;
+    font-weight: bold;
+}
+@media (max-width: 600px) {
+    .area-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+.accordion-questions {
+    width: 100%;
+    padding: 15px;
+    background:  #2e7d32;
+    color: white;
+    text-align: left;
+    cursor: pointer;
+    font-size: 16px;
+}
+.accordion-answer {
+    display: none;
+    padding: 15px;
+    background: beige;
+}
+.accordion-item.active .accordion-answer {
+    display: block;
 }

@@ -1,42 +1,86 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Services - GasGo</title>
-    </head>
-    <link rel="stylesheet" href="css/theme.css">
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Services - GoGas</title>
+   <link rel="stylesheet" href="css/theme.css">
+</head>
+<body>
 
-    <script src="../javascript/scripts.js"></script>
+<div class="service-section">
+  <h1>Our Services</h1>
 
-    <body>
-         <section class="service-section">
-            <h1>Our Services</h1>
-            <p>Choose the Gas service you need.GoGas make gas delivery simple and convient just for you.</p>
-       <div class="nav">
-        <a href="index.html">Home</a>
-        <a href="services.html">Services</a>
-        <a href="Howitworks.html">How it works</a> 
-        <a href="about us.html">About Us</a>
-        <a href="contact us.html">Contact Us</a>
-        </div> 
-        <img src="images/istockphoto.jpg"wodth="40%">
-        <div class="service-container">
-        </div>
-        <div class="service-card">
-        <h2>Gas Refilling</h2>
-        <p>ReFill your gas cylinder fast and conveniently.</p>
-        <button onclick="showform('refill')">Choose Refill</button>
-    </div>
-    <div id="service-form"></div>
+  <div class="nav">
+    <a href="index.html">Home</a>
+    <a href="services.html">Services</a>
+    <a href="Howitworks.html">How it works</a>
+    <a href="about us.html">About Us</a>
+    <a href="contact us.html">Contact Us</a>
+  </div>
+
+  <img src="images/istockphoto.jpg" width="40%">
+  <p>Choose the Gas service you need. GoGas make gas delivery simple and convient just for you.</p>
+
+  <div class="service-container">
+
     <div class="service-card">
-        <h2>Gas Exchange</h2>
-        <p>Exchange your empty gas Cylinder for a full one.</p>
-        <button onclick="showform('exchange')">Choose Exchange</button>
+      <h2>Gas Refilling</h2>
+      <p>Refill your gas cylinder fast and conveniently.</p>
+      <button onclick="showForm('refill')">Choose Refill</button>
     </div>
-    <div class="service-card"><h2>Emergency Gas Delivery</h2>
-        <p>Running out of gas ? Request a fast gas delivery when you need it.</p>
-        <button onclick="showform('emergency')">Request Emergency Delivery</button>
+
+    <div class="service-card">
+      <h2>Gas Exchange</h2>
+      <p>Exchange your empty gas Cylinder for a full one.</p>
+      <button onclick="showForm('exchange')">Choose Exchange</button>
     </div>
-    <div id="service-form"></div>
-    </body>
-         </section>
+
+    <div class="service-card">
+      <h2>Emergency Gas Delivery</h2>
+      <p>Running out of gas? Request a fast gas delivery when you need it.</p>
+      <button onclick="showForm('emergency')">Request Emergency Delivery</button>
+    </div>
+
+  </div>
+
+  <!-- FORM WILL SHOW HERE - ONLY ONE DIV -->
+  <div id="service-form"></div>
+
+</div>
+
+<script>
+function showForm(service) {
+  let formArea = document.getElementById("service-form");
+  let title = "";
+
+  if (service === 'refill') {
+    title = "Gas Refill Request";
+  } else if (service === 'exchange') {
+    title = "Gas Exchange Request";
+  } else if (service === 'emergency') {
+    title = "Emergency Gas Delivery Request";
+  }
+
+  formArea.innerHTML = `
+    <h2>${title}</h2>
+    <form>
+      <label>Full Name:</label><br>
+      <input type="text" placeholder="Enter your name" required><br><br>
+
+      <label>Phone Number:</label><br>
+      <input type="tel" placeholder="Enter your phone number" required><br><br>
+
+      <label>Delivery Address:</label><br>
+      <input type="text" placeholder="Enter your address" required><br><br>
+
+      <button type="submit">Request</button>
+    </form>
+  `;
+
+  formArea.scrollIntoView({ behavior: "smooth" });
+}
+</script>
+
+</body>
 </html>
